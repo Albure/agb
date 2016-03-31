@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +26,21 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+  Route::get('/', function () {
+      return view('pages.home');
+  });
+
+
+  Route::auth();
+    Route::resource('cpp', 'cppc@index');
+  Route::post('contact',['as'=>'contact.post','uses'=>'cdrcontroller@PostContact']);
+});
+
+
+
+Route::group(['middleware' => ['web', 'auth']], function () {
+    Route::get('/home', 'HomeController@index');
+    Route::resource('cdr', 'cdrcontroller');
+    Route::get('/timeline', 'timelinec@index');
+
 });
