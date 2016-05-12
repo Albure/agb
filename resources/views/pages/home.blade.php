@@ -24,8 +24,11 @@
 
     </div>
     <div class="text-center">
-        <a href="/cpp/cppintial" class="btn btn-primary">CollegePlan Proto</a>
-        <a href="/cdr/kkkr3w" class="btn btn-primary">Kush Krew</a>
+        <div class="ntd">
+            <a href="/Unlaced" class="bigger-btn btn-primary">Unlaced</a><br><br>
+        </div>
+        <a href="/cpp/cppintial" class="btn btn-primary">CPP In Progress</a>
+        <a href="/cdr/kkkr3w" class="btn btn-primary">Krew In Progress</a>
         @if (Auth::guest())
             <br><br><a href="/login" class="btn btn-primary">Login</a>
         @else

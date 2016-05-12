@@ -33,6 +33,11 @@ Route::group(['middleware' => ['web']], function () {
 
   Route::auth();
     Route::resource('cpp', 'cppc@index');
+    //tempred@index
+    Route::get('/Unlaced', 'unlacedc@index');
+    Route::get('/Unlaced/shop', 'unlacedc@shopindex');
+    Route::get('/Unlaced/about', 'unlacedc@about');
+    Route::get('/Unlaced/contact', 'unlacedc@contact');
   Route::post('contact',['as'=>'contact.post','uses'=>'cdrcontroller@PostContact']);
 });
 
@@ -42,5 +47,6 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get('/home', 'HomeController@index');
     Route::resource('cdr', 'cdrcontroller');
     Route::get('/timeline', 'timelinec@index');
+
 
 });

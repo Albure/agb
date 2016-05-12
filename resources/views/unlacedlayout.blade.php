@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="One the of the best stops for the best kicks">
     <title>AGB</title>
     <link rel="stylesheet" href="/css/app.css">
   </head>
-  <body>
+  <body class="bg-gray">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -15,12 +16,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">AGB</a>
+          <a class="navbar-brand" href="/">AGB//UNLACED</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <!--<li><a href="/cdr/kkkr3w">Krew In Progress</a></li>
-            <li><a href="/cpp/cppinitial">CPP In Progress</a></li>-->
+            <li><a href="/Unlaced/about">About</a></li>
+            <li><a href="/Unlaced/contact">Contact</a></li>
+            <li><a href="/Unlaced/shop">Shop</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <!-- Authentication Links -->
